@@ -21,8 +21,7 @@ BT can then be applied to discover specific behaviors (or ant entities) that ind
 
 1. [Expected Output](https://github.com/ctyeong/BeyondTracking#expected-output)
 2. [Installation](https://github.com/ctyeong/BeyondTracking#installation)
-3. [Training](https://github.com/ctyeong/BeyondTracking#training)
-4. [Test](https://github.com/ctyeong/BeyondTracking#test)
+4. [Execution](https://github.com/ctyeong/BeyondTracking#execution)
 5. [Citation](https://github.com/ctyeong/BeyondTracking#citation)
 6. [Contact](https://github.com/ctyeong/BeyondTracking#contact)
 
@@ -56,12 +55,10 @@ Four output examples are displayed above: (a) BT does not use thresholding for p
     ```
    - Python 3.6 is assumed to be installed already
 
-# Training 
 
+# Execution 
 
-
-# Test 
-
+We assume that a state detector has been trained with IO-GEN to be saved as `IO-GEN_Path/IO-GEN.h5` by following [this instruction](https://github.com/ctyeong/IO-GEN#training).
 
 
 # Citation 
