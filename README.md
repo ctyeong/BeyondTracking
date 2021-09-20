@@ -3,8 +3,11 @@
 This repository contains the codes used for the pre-printed paper at \[[arXiv:2108.09394](https://arxiv.org/abs/2108.09394)\]: 
 
 ***Beyond Tracking: Using Deep Learning to Discover Novel Interactions in Biological Swarms***,
+presented at the joint conference [DARS-SWARM2021](https://www.swarm-systems.com/), winning the [*Best Paper Award* at SWARM2021](https://www.swarm-systems.com/dars-swarm2021/awards#h.a6edhgurno03). 
 
-which was presented at the joint conference [DARS-SWARM2021](https://www.swarm-systems.com/), winning the [*Best Paper Award* at SWARM2021](https://www.swarm-systems.com/dars-swarm2021/awards). Basically, this BeyondTracking (BT) framework has been built to *visually* highlight local behaviors in complex multi-agent systems (e.g., ant colony) that a system-level state detector considers *abnormal* to potentially inform humans of *unknown* behavioral cues of global state transitions. 
+<img src=Imgs/scenario.jpg width="80%">
+
+Basically, this BeyondTracking (BT) framework has been built to *visually* highlight local behaviors in complex multi-agent systems (e.g., ant colony) that a system-level state detector considers *abnormal* to potentially inform humans of *unknown* individual-level behavioral cues of global state transitions. 
 
 In the paper, therefore, BT is built upon [***IO-GEN***](https://github.com/ctyeong/IO-GEN), designed to detect abnormal states of ant colonies, while the model could only access observations of normal ant colonies. In particular, each input to IO-GEN is set as a sequence of video frames from the entire view of the focal system without spatial tracking annotations. So, IO-GEN is trained to utilise the global view to detect abnormal states in observed ant systems. 
 
