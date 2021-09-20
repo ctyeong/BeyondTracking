@@ -5,7 +5,7 @@ This repository contains the codes used for the pre-printed paper at \[[arXiv:21
 ***Beyond Tracking: Using Deep Learning to Discover Novel Interactions in Biological Swarms***,
 presented at the joint conference [DARS-SWARM2021](https://www.swarm-systems.com/), winning the [*Best Paper Award* at SWARM2021](https://www.swarm-systems.com/dars-swarm2021/awards#h.a6edhgurno03). 
 
-<img src=Imgs/scenario.jpg width="80%">
+<img src=imgs/scenario.jpg width="80%">
 
 Basically, this BeyondTracking (BT) framework has been built to *visually* highlight local behaviors in complex multi-agent systems (e.g., ant colony) that a system-level state detector considers *informative* for inference of state transitions in global system. The ultimate goal of the method is set to inform humans of *unknown* individual behaviors to better understand complex social systems.
 
