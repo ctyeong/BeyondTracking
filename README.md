@@ -7,11 +7,11 @@ presented at the joint conference [DARS-SWARM2021](https://www.swarm-systems.com
 
 <img src=Imgs/scenario.jpg width="80%">
 
-Basically, this BeyondTracking (BT) framework has been built to *visually* highlight local behaviors in complex multi-agent systems (e.g., ant colony) that a system-level state detector considers *abnormal* to potentially inform humans of *unknown* individual-level behavioral cues of global state transitions. 
+Basically, this BeyondTracking (BT) framework has been built to *visually* highlight local behaviors in complex multi-agent systems (e.g., ant colony) that a system-level state detector considers *informative* for inference of state transitions in global system. The ultimate goal of the method is set to inform humans of *unknown* individual behaviors to better understand complex social systems.
 
-In the paper, therefore, BT is built upon [***IO-GEN***](https://github.com/ctyeong/IO-GEN), designed to detect abnormal states of ant colonies, while the model could only access observations of normal ant colonies. In particular, each input to IO-GEN is set as a sequence of video frames from the entire view of the focal system without spatial tracking annotations. So, IO-GEN is trained to utilise the global view to detect abnormal states in observed ant systems. 
+In the paper, therefore, BT is built upon [***IO-GEN***](https://github.com/ctyeong/IO-GEN), designed to detect abnormal states of ant colonies, while the model could only access observations of normal ant colonies. In particular, each input to IO-GEN is set as a sequence of video frames from the entire view of the focal system without spatial tracking annotations. So, IO-GEN is trained to utilise the global-view observations to detect abnormal ant colonies. 
 
-BT can then be applied to discover specific behaviors (or ant entities) that indicate the abnormal states. [Grad-CAM](https://ieeexplore.ieee.org/document/8237336) is an essential component in BT to visualise local motions of ants from sequential frame images, but as stated in the archived paper, only highly prioritised regions are displayed in BT by thresholding. 
+BT can then be applied to discover specific behaviors (or ant entities) that indicate the abnormal global states. Technically, [Grad-CAM](https://ieeexplore.ieee.org/document/8237336) is an essential component in BT to visualise local motions of ants from sequential frame images, but as stated in the archived paper, only highly prioritised regions are displayed in BT by thresholding to only localise highly impactful individuals. 
 
 # Contents
 
