@@ -12,12 +12,12 @@ BT can then be applied to discover specific behaviors (or ant entities) that ind
 
 # Contents
 
-1. [Examples](https://github.com/ctyeong/IO-GEN#examples)
-1. [Installation](https://github.com/ctyeong/IO-GEN#installation)
-1. [Training](https://github.com/ctyeong/IO-GEN#training)
-1. [Test](https://github.com/ctyeong/IO-GEN#test)
-1. [Citation](https://github.com/ctyeong/IO-GEN#citation)
-1. [Contact](https://github.com/ctyeong/IO-GEN#contact)
+1. [Examples](https://github.com/ctyeong/BeyondTracking#examples)
+2. [Installation](https://github.com/ctyeong/BeyondTracking#installation)
+3. [Training](https://github.com/ctyeong/BeyondTracking#training)
+4. [Test](https://github.com/ctyeong/BeyondTracking#test)
+5. [Citation](https://github.com/ctyeong/BeyondTracking#citation)
+6. [Contact](https://github.com/ctyeong/BeyondTracking#contact)
 
 
 # Examples 
