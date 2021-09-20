@@ -75,4 +75,4 @@ We assume that a state detector has been trained with IO-GEN to be saved as `IO-
 
 # Contact
 
-If there is any question or suggestion, please do not hesitate to drop an email to tchoi@lincoln.ac.uk. Thanks!
+If there is any question or suggestion, please do not hesitate to drop an email to tchoi@lincoln.ac.uk, or DM to [@ssuty](https://twitter.com/ssuty) on Twitter! Thanks!
