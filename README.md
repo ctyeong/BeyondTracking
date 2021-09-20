@@ -2,7 +2,7 @@
 
 This repository contains the codes used for the pre-printed paper at \[[arXiv:2108.09394](https://arxiv.org/abs/2108.09394)\]: 
 
-***Beyond Tracking: Using Deep Learning to Discover Novel Interactions in Biological Swarms***,
+***"Beyond Tracking: Using Deep Learning to Discover Novel Interactions in Biological Swarms"***,
 presented at the joint conference [DARS-SWARM2021](https://www.swarm-systems.com/), winning the [*Best Paper Award* at SWARM2021](https://www.swarm-systems.com/dars-swarm2021/awards#h.a6edhgurno03). 
 
 <img src=imgs/scenario.jpg width="80%">
@@ -46,7 +46,7 @@ Four output examples are displayed above: (a) BT does not use thresholding for p
 
 1. Clone the repository
     ```
-    git clone https://github.com/ctyeong/IO-GEN.git
+    $ git clone https://github.com/ctyeong/BeyondTracking.git
     ```
 
 2. Install the required Python packages
@@ -55,8 +55,6 @@ Four output examples are displayed above: (a) BT does not use thresholding for p
     pip install -r requirements.txt
     ```
    - Python 3.6 is assumed to be installed already
-
-
 
 # Training 
 
