@@ -52,7 +52,7 @@ Four output examples are displayed above: (a) BT does not use thresholding for p
 2. Install the required Python packages
 
     ```
-    pip install -r requirements.txt
+    $ pip install -r requirements.txt
     ```
    - Python 3.6 is assumed to be installed already
 
