@@ -60,11 +60,11 @@ Four output examples are displayed above: (a) BT does not use thresholding for p
 
 We assume:
 
-1. a state detector has been trained with IO-GEN to be saved as `./Model_Example_Grad_CAM/cls.h5` by following [this instruction](https://github.com/ctyeong/IO-GEN#training).
+1. A state detector has been trained with IO-GEN to be saved as a file by following [this instruction](https://github.com/ctyeong/IO-GEN#training).
     - You can find an example model at `./Model_Example_Grad_CAM/cls.h5`, which was trained to take *m=2* pairs of x,y optical flows per input. 
 
-2. *n+1* RGB frames and *2n* pairs of x,y optical flows are in `./Input_Examples_Grad_CAM/xx`. 
-    - As examples, We provide 14 folders under `./Input_Examples_Grad_CAM`, where each folder contains 10 RGB frames and 18 x- and y-axis optical flows respectively. For example, under `./Input_Examples_Grad_CAM/26*, there are such files as:
+2. *n+1* RGB frames and *2n* pairs of x,y optical flows are in the same directory. 
+    - As examples, We provide 14 folders under `./Input_Examples_Grad_CAM`, where each folder contains 10 RGB frames and 18 x- and y-axis optical flows respectively. For example, under `./Input_Examples_Grad_CAM/26`, there are such files as:
 
     ```
     rgb-00.jpg, rgb-01.jpg, ..., rgb-09.jpg, 
@@ -72,7 +72,7 @@ We assume:
     flow_y-00-00.jpg, flow_y-00-01.jpg, flow_y-01-00.jpg, flow_y-01_01.jpg, ... flow_y-08-00.jpg, flow_y-08-01  
     ```
 
-    - Note that `flow_x-i-00.jpg`, `flow_x-i-01.jpg`, `flow_y-i-00.jpg`, and `flow_y-i-01.jpg` in this case with *m=2* are motional representations between `rgb-i.jpg` and `rgb-(i+1).jpg`.
+    - Note that {`flow_x-i-00.jpg`, `flow_x-i-01.jpg`, `flow_y-i-00.jpg`, `flow_y-i-01.jpg`} in this case with *m=2* are motional representations between `rgb-i.jpg` and `rgb-(i+1).jpg`.
 
 Then, run `main.py` with the required arguments:
 ```
@@ -88,7 +88,7 @@ Each argument represents the following:
 - `-t`: Top % of heatmaps to visualise.
 - `-o`: Output directory.  
 
-After running, the `./Outputs` folder contains *n* RGB images with the generated heatmaps as well as a `.gif` file that plays them sequentially: 
+Finally, you can find in the `./Outputs` folder *n* RGB images with the generated heatmaps as well as a `.gif` file that plays them sequentially: 
 ```
 out-00.jpg, out-01.jpg, ..., out-08.jpg, out.gif
 ```
