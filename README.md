@@ -9,7 +9,7 @@ presented at the joint conference [DARS-SWARM2021](https://www.swarm-systems.com
 
 Basically, this BeyondTracking (BT) framework has been built to *visually* highlight local behaviors in complex multi-agent systems (e.g., ant colony) that a system-level state detector considers *informative* for inference of state transitions in global system. The ultimate goal of the method is set to inform humans of *unknown* individual behaviors to better understand complex social systems.
 
-In the paper, therefore, BT is built upon two key components, publicly available online: 
+In the paper, therefore, BT is built upon two key components, each publicly available online: 
 1. [***IO-GEN***](https://github.com/ctyeong/IO-GEN)
 2. [***Video data of Harpegnathos saltator ants in optical flow form***](https://github.com/ctyeong/OpticalFlows_HsAnts)
    
@@ -64,7 +64,7 @@ We assume:
     - You can find an example model at `./Model_Example_Grad_CAM/cls.h5`, which was trained to take *m=2* pairs of x,y optical flows per input. 
 
 2. *n+1* RGB frames and *2n* pairs of x,y optical flows are in the same directory. 
-    - As examples, We provide 14 folders under `./Input_Examples_Grad_CAM`, where each folder contains 10 RGB frames and 18 x- and y-axis optical flows respectively. For example, under `./Input_Examples_Grad_CAM/26`, there are such files as:
+    - As examples, We provide 14 folders under `./Input_Examples_Grad_CAM`, where each folder contains 10 RGB frames and 18 x- and y-axis optical flows respectively. For example, under `./Input_Examples_Grad_CAM/75`, there are such files as:
 
     ```
     rgb-00.jpg, rgb-01.jpg, ..., rgb-09.jpg, 
@@ -76,7 +76,7 @@ We assume:
 
 Then, run `main.py` with the required arguments:
 ```
-$ python main.py -p "./Model_Example_Grad_CAM/cls.h5" -i "./Input_Examples_Grad_CAM/26" -m 2 -r 256 -f 64 -t .05 -o "./Outputs"
+$ python main.py -p "./Model_Example_Grad_CAM/cls.h5" -i "./Input_Examples_Grad_CAM/75" -m 2 -r 256 -f 64 -t .05 -o "./Outputs"
 ```
 
 Each argument represents the following:
@@ -92,6 +92,14 @@ Finally, you can find in the `./Outputs` folder *n* RGB images with the generate
 ```
 out-00.jpg, out-01.jpg, ..., out-08.jpg, out.gif
 ```
+
+Outputs of `out-03.jpg`, `out-04.jpg`, and `out-05.jpg` from input folder `75` can be different as follows depending on `-t`: 
+
+| `-t` | `out-03.jpg` | `out-04.jpg` | `out-05.jpg` |
+|------|--------------|--------------| ------------ |
+| 0.02 | ![](imgs/output_ex/.02/out-03.jpg) | ![](imgs/output_ex/.02/out-04.jpg) | ![](imgs/output_ex/.02/out-05.jpg) |
+| 0.05 | ![](imgs/output_ex/.05/out-03.jpg) | ![](imgs/output_ex/.05/out-04.jpg) | ![](imgs/output_ex/.05/out-05.jpg) |
+| 0.20 | ![](imgs/output_ex/.20/out-03.jpg) | ![](imgs/output_ex/.20/out-04.jpg) | ![](imgs/output_ex/.20/out-05.jpg) |
 
 
 # Citation 
