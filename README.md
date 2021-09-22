@@ -79,28 +79,29 @@ Then, run `main.py` with the required arguments:
 $ python main.py -p "./Model_Example_Grad_CAM/cls.h5" -i "./Input_Examples_Grad_CAM/75" -m 2 -r 256 -f 64 -t .05 -o "./Outputs"
 ```
 
-Each argument represents the following:
-- `-p`: Path to the saved model from IO-GEN.
-- `-i`: Directory of RGB frames and corresponding optical flows.
-- `-m`: Number of optical flows per input.
-- `-r`: Size of each RGB image in output.
-- `-f`: Size of each optical flow image fed as input. 
-- `-t`: Top % of heatmaps to visualise.
-- `-o`: Output directory.  
+- Each argument represents the following:
+  - `-p`: Path to the saved model from IO-GEN.
+  - `-i`: Directory of RGB frames and corresponding optical flows.
+  - `-m`: Number of optical flows per input.
+  - `-r`: Size of each RGB image in output.
+  - `-f`: Size of each optical flow image fed as input. 
+  - `-t`: Top % of heatmaps to visualise.
+  - `-o`: Output directory.  
 
 Finally, you can find in the `./Outputs` folder *n* RGB images with the generated heatmaps as well as a `.gif` file that plays them sequentially: 
-```
-out-00.jpg, out-01.jpg, ..., out-08.jpg, out.gif
-```
+  ```
+  out-00.jpg, out-01.jpg, ..., out-08.jpg, out.gif
+  ```
 
-Outputs of `out-03.jpg`, `out-04.jpg`, and `out-05.jpg` from input folder `75` can be different as follows depending on `-t`: 
+Outputs of `out-03.jpg`, `out-04.jpg`, and `out-05.jpg` from input folder `75` can be different depending on `-t` as shown below: 
 
-| `-t` | `out-03.jpg` | `out-04.jpg` | `out-05.jpg` |
-|------|--------------|--------------| ------------ |
-| 0.02 | ![](imgs/output_ex/.02/out-03.jpg) | ![](imgs/output_ex/.02/out-04.jpg) | ![](imgs/output_ex/.02/out-05.jpg) |
-| 0.05 | ![](imgs/output_ex/.05/out-03.jpg) | ![](imgs/output_ex/.05/out-04.jpg) | ![](imgs/output_ex/.05/out-05.jpg) |
-| 0.20 | ![](imgs/output_ex/.20/out-03.jpg) | ![](imgs/output_ex/.20/out-04.jpg) | ![](imgs/output_ex/.20/out-05.jpg) |
+  | `-t` | `out-03.jpg` | `out-04.jpg` | `out-05.jpg` |
+  |------|--------------|--------------| ------------ |
+  | 0.02 | ![](imgs/output_ex/.02/out-03.jpg) | ![](imgs/output_ex/.02/out-04.jpg) | ![](imgs/output_ex/.02/out-05.jpg) |
+  | 0.05 | ![](imgs/output_ex/.05/out-03.jpg) | ![](imgs/output_ex/.05/out-04.jpg) | ![](imgs/output_ex/.05/out-05.jpg) |
+  | 0.20 | ![](imgs/output_ex/.20/out-03.jpg) | ![](imgs/output_ex/.20/out-04.jpg) | ![](imgs/output_ex/.20/out-05.jpg) |
 
+  - Obviously, the higher `-t` highlights larger areas, whereas the smaller only allows for the highly impactful local motion, which is around *dueling* observed on the central region in this example.  
 
 # Citation 
 
